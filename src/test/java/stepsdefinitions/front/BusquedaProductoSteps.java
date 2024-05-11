@@ -28,17 +28,17 @@ public class BusquedaProductoSteps extends SetupFront {
         setUpTest();
     }
 
-    @Dado("que el usuario esta en la pagina de reserva del hotel")
-    public void que_el_usuario_esta_en_la_pagina_de_reserva_del_hotel() {
+    @Dado("que el usuario esta en la pagina de croper")
+    public void que_el_usuario_esta_en_la_pagina_de_croper() {
         theActorInTheSpotlight().wasAbleTo(AbrirWeb.abrirWeb());
     }
-    @Cuando("el usuario introduce el nombre del producto en el campo de búsqueda")
+    @Cuando("el usuario introduce el nombre del producto en el campo de busqueda")
     public void el_usuario_introduce_el_nombre_del_producto_en_el_campo_de_búsqueda() {
         theActorInTheSpotlight().attemptsTo(AplicarFiltros.aplicarFiltros());
 
     }
-    @Entonces("el usuario debería ver una lista de productos que coinciden con la búsqueda")
-    public void el_usuario_debería_ver_una_lista_de_productos_que_coinciden_con_la_búsqueda() {
+    @Entonces("el usuario deberia ver una lista de productos que coinciden con la busqueda")
+    public void el_usuario_deberia_ver_una_lista_de_productos_que_coinciden_con_la_busqueda() {
         theActorInTheSpotlight().should(GivenWhenThen.seeThat(MensajeBusquedaExitosa.mensajeBusquedaExitosa(),is(equalTo(PRODUCTO))));
 
     }

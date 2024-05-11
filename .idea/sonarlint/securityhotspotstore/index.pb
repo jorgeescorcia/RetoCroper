@@ -63,3 +63,17 @@ x
 Hsrc/main/java/com/co/project/questions/front/MensajeBusquedaExitosa.java,8\3\83f041deb2146b77b2e0649c31203c889a2ad2e3
 n
 >src/test/java/stepsdefinitions/front/BarraNavegacionSteps.java,5\9\594aa5d876e9d1e9c04d2d08ef2d25cf99bfed7a
+j
+:src/test/java/runners/front/TestRunnerBarraNavegacion.java,9\e\9e055b16be37c0c57128f23d5f5c85b16841cce3
+k
+;src/test/java/runners/front/TestRunnerBusquedaProducto.java,7\f\7fdaefa0ed6276f2ee9e5f9a79b898f268100513
+x
+Hsrc/main/java/com/co/project/userinterface/croper/BarraDeNavegacion.java,d\7\d7a7602f3355e01f417767fb96b70c4bd09ecaff
+s
+Csrc/main/java/com/co/project/task/front/TestearBarraNavegacion.java,0\f\0fb036c37376f06d4e0764726cc939e09b4a8398
+n
+>src/main/java/com/co/project/questions/front/VerificarUrl.java,d\b\dbf09c9cbe6bfb2a57d88eb8b953fb74cdbafad7
+k
+;src/main/java/com/co/project/questions/front/NewTabUrl.java,0\6\0652774b32f77719d8e4f52569153335f81709fd
+q
+Asrc/test/java/stepsdefinitions/front/ValidacionTarjetasSteps.java,3\c\3ccc08e22ea9579fe9f96f11ee747132a17e57dc

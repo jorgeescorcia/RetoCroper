@@ -1,11 +1,20 @@
 package stepsdefinitions.front;
 
+import com.co.project.questions.front.VerificarUrl;
+import com.co.project.task.front.AbrirWeb;
+import com.co.project.task.front.TestearBarraNavegacion;
 import io.cucumber.java.Before;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import stepsdefinitions.setup.front.SetupFront;
 
+import static com.co.project.utils.front.Diccionario.VERIFICAR_URL;
+
+import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
 public class BarraNavegacionSteps  extends SetupFront {
 
     @Before
@@ -13,16 +22,20 @@ public class BarraNavegacionSteps  extends SetupFront {
         setUpTest();
     }
 
-    @Dado("que el usuario está en la página de inicio de Croper")
-    public void que_el_usuario_está_en_la_página_de_inicio_de_croper() {
+    @Dado("que el usuario esta en la pagina de inicio de Croper")
+    public void que_el_usuario_esta_en_la_pagina_de_inicio_de_croper() {
+        theActorInTheSpotlight().wasAbleTo(AbrirWeb.abrirWeb());
 
     }
-    @Cuando("el usuario interactúa con cada botón de la barra de navegación")
-    public void el_usuario_interactúa_con_cada_botón_de_la_barra_de_navegación() {
+    @Cuando("el usuario interactua con cada boton de la barra de navegacion")
+    public void el_usuario_interactua_con_cada_boton_de_la_barra_de_navegacion() {
+        theActorInTheSpotlight().wasAbleTo(TestearBarraNavegacion.testearBarraNavegacion());
 
     }
-    @Entonces("cada botón debería responder al clic del usuario")
-    public void cada_botón_debería_responder_al_clic_del_usuario() {
+
+    @Entonces("cada boton del menu redirigira a la pagina correspondiente")
+    public void cada_botón_del_menu_redirigira_a_la_pagina_correspondiente() {
+        theActorInTheSpotlight().should(GivenWhenThen.seeThat(VerificarUrl.value(),is(equalTo(VERIFICAR_URL))));
 
     }
 }

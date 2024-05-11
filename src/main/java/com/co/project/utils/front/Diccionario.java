@@ -10,6 +10,8 @@ public abstract class Diccionario {
 
     public static final String PRODUCTO = "Filtro de aceite - R53727";
 
+    public static final String VERIFICAR_URL ="https://blog.croper.com/";
+
 
 
 
