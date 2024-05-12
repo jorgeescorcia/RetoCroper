@@ -41,7 +41,7 @@ k
 ;src/main/java/com/co/project/task/front/TesterTarjetas.java,3\e\3ed7752ed9771b5452025001e7db87b02ecb81db
 t
 Dsrc/main/java/com/co/project/questions/front/UrlContienePalabra.java,0\a\0a1e5495db283cbdaa0a60c25a598860708123d3
-s
-Csrc/main/java/com/co/project/questions/front/ObtenerURLTarjeta.java,e\f\efe2c76e26330915ecd2380f694eb463a836fb2c
-m
-=src/main/java/com/co/project/questions/front/CompararURL.java,8\7\87026716561dcff73efe44a48d813341a40a347c
+w
+Gsrc/main/java/com/co/project/task/front/TesterTarjetaPersonalizada.java,0\e\0e3ab72f36a5d5aad723da65dc3787d44efd0a50
+y
+Isrc/main/java/com/co/project/task/front/TesterTarjetasAleatoriamente.java,a\1\a17c834708403b6476e2ae55291a8f9241771f9f

@@ -5,6 +5,10 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class Tarjetas extends PageObject {
 
+    public static final Target BTN_INICIO =
+            Target.the("Insumos Agricolas").locatedBy("//body[1]/cp-root[1]/cp-layout[1]/cp-header[1]/header[1]/div[1]/div[1]/a[1]/cp-icon[1]");
+
+
     public static final Target INSUMOS_AGRICOLAS =
             Target.the("Insumos Agricolas").locatedBy("//a[h3[contains(text(), 'Insumos agrícolas')]]");
 

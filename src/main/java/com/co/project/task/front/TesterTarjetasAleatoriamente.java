@@ -16,7 +16,7 @@ import static com.co.project.userinterface.croper.Tarjetas.*;
 
 
 
-public class TesterTarjetas implements Task {
+public class TesterTarjetasAleatoriamente implements Task {
 
     private List<Target> cards = Arrays.asList(
             INSUMOS_AGRICOLAS,
@@ -37,14 +37,15 @@ public class TesterTarjetas implements Task {
 
         // Haz clic en la tarjeta aleatoria
         actor.attemptsTo(
-                Click.on(randomCard)
+                Click.on(randomCard),
+                Click.on(BTN_INICIO)
 
         );
 
 
     }
-    public static TesterTarjetas testerTarjetas() {
-        return new TesterTarjetas();
+    public static TesterTarjetasAleatoriamente testerTarjetas() {
+        return new TesterTarjetasAleatoriamente();
     }
 
 

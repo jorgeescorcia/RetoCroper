@@ -1,11 +1,9 @@
 package com.co.project.questions.front;
 
-import com.co.project.task.front.TesterTarjetas;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.targets.Target;
-import org.hamcrest.Matcher;
 
 import static com.co.project.userinterface.croper.Tarjetas.*;
 
