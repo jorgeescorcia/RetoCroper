@@ -1,2 +1,6 @@
 
-m	java:S106"+Replace this use of System.out by a logger.(é§Æ8ëÕö1J$8ef01f42-94c1-4545-8835-5161f1e1250e
+‰
+java:S1192"FDefine a constant instead of duplicating this literal "false" 6 times.(¿Øâ¬8ß„ÒØö1J$2bed2fe5-541b-4175-9942-cd27f7624b64
+•
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ôµ¤8î„ÒØö1J$30356bcf-b523-4a73-8748-54cd5f2276d2
+m	java:S106"+Replace this use of System.out by a logger.(é§Æ8õ„ÒØö1J$0bc9a779-14ba-4396-8077-123020861c96

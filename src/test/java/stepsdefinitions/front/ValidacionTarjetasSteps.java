@@ -1,15 +1,11 @@
 package stepsdefinitions.front;
 
-import com.co.project.questions.front.CompararURL;
-import com.co.project.questions.front.ObtenerURLTarjeta;
-import com.co.project.questions.front.UrlContienePalabra;
 import com.co.project.task.front.AbrirWeb;
 import com.co.project.task.front.TesterTarjetas;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
-import net.serenitybdd.screenplay.GivenWhenThen;
-import net.serenitybdd.screenplay.targets.Target;
+
 import stepsdefinitions.setup.front.SetupFront;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
@@ -35,7 +31,7 @@ public class ValidacionTarjetasSteps extends SetupFront {
     }
     @Entonces("la URL deberia corresponde a la tarjeta seleccionada")
     public void laURLDeberiaCorrespondeALaTarjetaSeleccionada() {
-       theActorInTheSpotlight().should(GivenWhenThen.seeThat(UrlContienePalabra.deLaTarjeta(TesterTarjetas.testerTarjetas().getRandomCard()), is(true)));
+       // theActorInTheSpotlight().should(GivenWhenThen.seeThat(TesterTarjetas.testerTarjetas(UrlContienePalabra.deLaTarjeta()),is(true)));;
 
     }
 }

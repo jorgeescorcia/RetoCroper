@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Navegación de tarjetas" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-05-12T02:30:43" hostname="DESKTOP-COSPO61" time="10.368">
+<testsuite name="Navegación de tarjetas" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-12T04:54:47" hostname="DESKTOP-COSPO61" time="9.196">
   <properties/>
-  <testcase name="Verificacion de la URL al hacer clic en una tarjeta" classname="Navegación de tarjetas" time="10.368">
-    <failure message="java.lang.AssertionError: null" type="java.lang.AssertionError">java.lang.AssertionError: null
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:397)
-	at stepsdefinitions.front.ValidacionTarjetasSteps.laURLDeberiaCorrespondeALaTarjetaSeleccionada(ValidacionTarjetasSteps.java:38)
-	at ✽.la URL deberia corresponde a la tarjeta seleccionada(file:///C:/Users/Jorge/Desktop/Automatizacion%20Croper%20Test/src/test/resources/features/front/validaciondetarjetas.feature:11)
-</failure>
-  </testcase>
-  <system-out><![CDATA[Esta es la web actual: https://croper.com/stores
-Esta es la web actual: https://croper.com/stores
-]]></system-out>
+  <testcase name="Verificacion de la URL al hacer clic en una tarjeta" classname="Navegación de tarjetas" time="9.196"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
@@ -23,19 +13,17 @@ Verificacion de la URL al hacer clic en una tarjeta(navegación-de-tarjetas;veri
 --------------------------------------------------------------------------------
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*, --incognito, --start-maximized, --disable-gpu, --disable-extensions], extensions: []}}
-may. 11, 2024 9:30:47 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may. 11, 2024 11:54:50 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 124
-may. 11, 2024 9:30:47 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may. 11, 2024 11:54:50 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 124.0.6367.158. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[Test worker] ERROR  - ?[91m
-  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
- |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
-   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
-   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
 Verificacion de la URL al hacer clic en una tarjeta
----------------------------------------------------------------?[0m
-[Test worker] ERROR  - ?[91m    Test failed at step: Then url contiene palabra should be (true)?[0m
-[Test worker] ERROR  - ?[91m    ?[0m
+----------------------------------------------------------------------?[0m
 ]]></system-err>
 </testsuite>

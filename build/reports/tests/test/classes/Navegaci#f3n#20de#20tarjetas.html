@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">10.368s</div>
+<div class="counter">9.196s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,35 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
-</li>
-<li>
-<a href="#tab3">Standard error</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Verificacion de la URL al hacer clic en una tarjeta"></a>
-<h3 class="failures">Verificacion de la URL al hacer clic en una tarjeta</h3>
-<span class="code">
-<pre>java.lang.AssertionError: null
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:397)
-	at stepsdefinitions.front.ValidacionTarjetasSteps.laURLDeberiaCorrespondeALaTarjetaSeleccionada(ValidacionTarjetasSteps.java:38)
-	at ✽.la URL deberia corresponde a la tarjeta seleccionada(file:///C:/Users/Jorge/Desktop/Automatizacion%20Croper%20Test/src/test/resources/features/front/validaciondetarjetas.feature:11)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -100,21 +78,13 @@
 </tr>
 </thead>
 <tr>
-<td class="failures">Verificacion de la URL al hacer clic en una tarjeta</td>
-<td class="failures">10.368s</td>
-<td class="failures">failed</td>
+<td class="success">Verificacion de la URL al hacer clic en una tarjeta</td>
+<td class="success">9.196s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
-<h2>Standard output</h2>
-<span class="code">
-<pre>Esta es la web actual: https://croper.com/stores
-Esta es la web actual: https://croper.com/stores
-</pre>
-</span>
-</div>
-<div id="tab3" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
 <pre>[Test worker] INFO  - 
@@ -127,20 +97,18 @@ Verificacion de la URL al hacer clic en una tarjeta(navegación-de-tarjetas;veri
 --------------------------------------------------------------------------------
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*, --incognito, --start-maximized, --disable-gpu, --disable-extensions], extensions: []}}
-may. 11, 2024 9:30:47 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may. 11, 2024 11:54:50 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 124
-may. 11, 2024 9:30:47 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may. 11, 2024 11:54:50 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 124.0.6367.158. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.1` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[Test worker] ERROR  - ?[91m
-  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
- |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
-   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
-   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
 Verificacion de la URL al hacer clic en una tarjeta
----------------------------------------------------------------?[0m
-[Test worker] ERROR  - ?[91m    Test failed at step: Then url contiene palabra should be (true)?[0m
-[Test worker] ERROR  - ?[91m    ?[0m
+----------------------------------------------------------------------?[0m
 </pre>
 </span>
 </div>
@@ -152,7 +120,7 @@ Verificacion de la URL al hacer clic en una tarjeta
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 11/05/2024, 9:30:54 p. m.</p>
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 11/05/2024, 11:54:57 p. m.</p>
 </div>
 </div>
 </body>
