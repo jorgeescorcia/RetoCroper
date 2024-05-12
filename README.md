@@ -8,8 +8,8 @@ Este proyecto contiene scripts de automatización de pruebas para la web de Crop
 
 ### Requisitos para la ejecucion
 
--Clonar Repositorio
--Java Development Kit (JDK) 17
--Gradle 7.6.3
--Gherkin
--Chrome Version > 100
+- Clonar Repositorio
+- Java Development Kit (JDK) 17
+- Gradle 7.6.3
+- Gherkin
+- Chrome Version > 100
